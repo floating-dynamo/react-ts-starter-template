@@ -1,5 +1,5 @@
 {
-  "name": "sridhar_maskeri/react-ts-starter-template",
+  "name": "react-ts-starter-template",
   "version": "0.0.1",
   "description": "This is a React TS Vite started template configured with MUI, Eslint & Prettier.",
   "type": "module",
