@@ -1,3 +1,4 @@
 eslintrc.json
 src/vite-env.d.ts
 README.md
+bin/cli.js
