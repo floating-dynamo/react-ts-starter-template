@@ -1,9 +1,15 @@
 {
-  "name": "@sridhar_maskeri/react-ts-starter-template",
+  "name": "react-ts-starter-template",
   "version": "1.0.0",
   "description": "This is a React TS Vite started template configured with MUI, Eslint & Prettier.",
   "type": "module",
-  "bin": "./bin/cli.js",
+  "private": true,
+  "license": "MIT",
+  "homepage": "https://github.com/floating-dynamo/react-ts-starter-template.git#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/floating-dynamo/react-ts-starter-template.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
