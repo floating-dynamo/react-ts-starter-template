@@ -1,16 +1,22 @@
-import { Grid, Typography } from "@mui/material";
-import WavingHandIcon from "@mui/icons-material/WavingHand";
+import { Routes, Route, useLocation } from "react-router-dom";
+import Navbar from "./components/navbar";
+import Home from "./pages/home";
 import "./App.css";
-
-const { VITE_GREET } = import.meta.env;
+import NotFound from "./pages/not-found";
 
 function App() {
+    const location = useLocation();
+    const showNavbarPaths = ["/"];
+    const showNavbar = showNavbarPaths.includes(location.pathname);
+
     return (
-        <Grid>
-            <Typography variant="h3">
-                { VITE_GREET } <WavingHandIcon />
-            </Typography>
-        </Grid>
+        <>
+            {showNavbar && <Navbar />}
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="*" element={<NotFound />} />
+            </Routes>
+        </>
     );
 }
 
